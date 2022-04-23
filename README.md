@@ -6,7 +6,8 @@
 
 <center>
     <img src="./mobile (13).png"><br />
-    <img src="./mobile (11).png"><img src="./mobile (12).png">
+    <img src="./mobile (11).png" style="width: 40%;">
+    <img src="./mobile (12).png"  style="width: 40%;">
 </center>
 
 ## Built With

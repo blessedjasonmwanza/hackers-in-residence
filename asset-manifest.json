@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/hackers-in-residence/static/css/main.f8d05e20.css",
-    "main.js": "/hackers-in-residence/static/js/main.7c055614.js",
+    "main.js": "/hackers-in-residence/static/js/main.b9eb662e.js",
     "static/js/377.fb285dab.chunk.js": "/hackers-in-residence/static/js/377.fb285dab.chunk.js",
     "service-worker.js": "/hackers-in-residence/service-worker.js",
     "index.html": "/hackers-in-residence/index.html",
     "main.f8d05e20.css.map": "/hackers-in-residence/static/css/main.f8d05e20.css.map",
-    "main.7c055614.js.map": "/hackers-in-residence/static/js/main.7c055614.js.map",
+    "main.b9eb662e.js.map": "/hackers-in-residence/static/js/main.b9eb662e.js.map",
     "377.fb285dab.chunk.js.map": "/hackers-in-residence/static/js/377.fb285dab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f8d05e20.css",
-    "static/js/main.7c055614.js"
+    "static/js/main.b9eb662e.js"
   ]
 }

@@ -7,19 +7,19 @@ import exercise from '../assets/img/exercise-run.png';
 import party from '../assets/img/party.png';
 export default function LandingPage() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0);  
   },[]);
   return (
     <>
       <div className="animate__animated animate__zoomIn">
         <br />
-        <NavLink to='/pickup' className='home-list'>
+        <NavLink to='pickup' className='home-list'>
           Request PickUp
         </NavLink>
-        <NavLink to='/emergency-contacts' className='home-list'>
+        <NavLink to='emergency-contacts' className='home-list'>
           Emergency Contacts
-        </NavLink>
-        <NavLink to='/book-canoe' className='home-list'>
+        </NavLink>  
+        <NavLink to='book-canoe' className='home-list'>
           Book Canoe ride
         </NavLink>
       </div>

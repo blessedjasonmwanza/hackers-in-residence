@@ -4,11 +4,17 @@
 
 > - Its basically a side project automation solution to common problems I observe on a daily basis
 
+<center>
+    <img src="./mobile (13).png"><br />
+    <img src="./mobile (11).png"><img src="./mobile (12).png">
+</center>
+
 ## Built With
 
 - JavaScript
-- React
+- React JS
 - Redux
+- HTML & CSS _```of course :-)```_
 
 ## Deployed On
 

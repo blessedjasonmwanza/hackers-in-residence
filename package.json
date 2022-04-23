@@ -1,14 +1,22 @@
 {
   "name": "hackers-in-residence",
+  "homepage": "https://blessedjasonmwanza.github.io/hackers-in-residence/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.7.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "alertifyjs": "^1.13.1",
+    "animate.css": "^4.1.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.1",
     "web-vitals": "^0.2.4",
     "workbox-background-sync": "^5.1.4",
     "workbox-broadcast-update": "^5.1.4",
@@ -24,6 +32,8 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

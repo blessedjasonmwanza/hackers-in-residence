@@ -1,4 +1,4 @@
-#Hackers In Residence 
+# Hackers In Residence 
 
 > I am developing this automation solution as a way to help mitigate and/or create an organized schema/way of how hackers report and communicate their requests/issues to staff members.
 

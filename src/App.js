@@ -12,6 +12,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/hackers-in-residence" element={<LandingPage />} />
           </Routes>
         </main>
       </Router>

@@ -1,14 +1,20 @@
-#Hackers In Residence 
+# Hackers In Residence 
 
 > I am developing this automation solution as a way to help mitigate and/or create an organized schema/way of how hackers report and communicate their requests/issues to staff members.
 
 > - Its basically a side project automation solution to common problems I observe on a daily basis
 
+<center>
+    <img src="./mobile (13).png"><br />
+    <img src="./mobile (11).png"><img src="./mobile (12).png">
+</center>
+
 ## Built With
 
 - JavaScript
-- React
+- React JS
 - Redux
+- HTML & CSS _```of course :-)```_
 
 ## Deployed On
 

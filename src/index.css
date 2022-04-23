@@ -1,3 +1,8 @@
+:root{
+  --theme-color: rgb(20, 97, 90);
+  --theme-color-coords: 20 97 90;
+  --header-height: 50px;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

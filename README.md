@@ -24,7 +24,7 @@
 ## Deployed On
 
 #### GitHub Pages 
-- ### [Live Preview coming soon](https://blessedjasonmwanza.github.io/hackers-in-residence/)
+- ### [Click here see live preview](https://blessedjasonmwanza.github.io/hackers-in-residence/)
 
 
 ## Getting Started

@@ -13,14 +13,17 @@ export default function LandingPage() {
     <>
       <div className="animate__animated animate__zoomIn">
         <br />
-        <NavLink to='pickup' className='home-list'>
-          Request PickUp
-        </NavLink>
         <NavLink to='emergency-contacts' className='home-list'>
           Emergency Contacts
         </NavLink>  
         <NavLink to='book-canoe' className='home-list'>
           Book Canoe ride
+        </NavLink>
+        <NavLink to='pickup' className='home-list'>
+          Request PickUp
+        </NavLink>
+        <NavLink to='pickup' className='home-list'>
+          Feature request
         </NavLink>
       </div>
       <div className='cards animate__animated animate__zoomIn animate__slow'>

@@ -1,8 +1,8 @@
 # Hackers In Residence 
 
-> I am developing this automation solution as a way to help mitigate and/or create an organized schema/way of how hackers report and communicate their requests/issues to staff members.
+> I am developing this automation app solution to help mitigate and/or create an organized schema/way of how hackers and residents of the [Nkwashi](https://nkwashi.com/) smart city live their day to day life, through automation of everyday life activities.
 
-> - Its basically a side project automation solution to common problems I observe on a daily basis
+> - Its basically a side project automation solution to common problems I observe on a daily basis while living in Nkwashi under the [Microverse program](https://www.microverse.org/?grsf=kvpb2j)
 
 <center>
     <img src="./mobile (13).png"><br />

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import 'animate.css/animate.min.css';
 import groceries from '../assets/img/groceries.png';
@@ -6,9 +6,6 @@ import beverages from '../assets/img/beverages.png';
 import exercise from '../assets/img/exercise-run.png';
 import party from '../assets/img/party.png';
 export default function LandingPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);  
-  },[]);
   return (
     <>
       <div className="animate__animated animate__zoomIn">
@@ -42,7 +39,7 @@ export default function LandingPage() {
           </div>
         </NavLink>
         <NavLink to="groceries" className='card'>
-          <img src={exercise} alt="Exercise" className='card-img animate__animated  animate__shakeX  animate__slower' />
+          <img src={exercise} alt="Exercise" className='card-img animate__animated  animate__shakeX  animate__slow' />
           <div className='card-info'>
             <h2>Exercise</h2>
             <p>Join a morning or evening road run and jogs</p>

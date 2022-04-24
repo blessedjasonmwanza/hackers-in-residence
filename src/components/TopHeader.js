@@ -9,8 +9,9 @@ export default function TopHeader() {
   const btnSample = <span style={{display:'block', width:'48px'}} />;
   const [backBtn, setBackBtn] = useState(<span />)
   useEffect(() => {
+    window.scrollTo(0, 0); // scroll to top of page
     if(location.pathname !== '/'){
-      setBackBtn(<img src={backIcon} alt="Back" className="back-icon" onClick={() => navigate('/')} />)
+      setBackBtn(<img src={backIcon} alt="Back" className="back-icon animate__animated animate__fadeIn" onClick={() => navigate('/')} />)
     }else{
       setBackBtn(btnSample)
     }

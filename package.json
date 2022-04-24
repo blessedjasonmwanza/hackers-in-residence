@@ -17,6 +17,7 @@
     "react-scripts": "5.0.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
+    "sweetalert2": "^11.4.9",
     "web-vitals": "^0.2.4",
     "workbox-background-sync": "^5.1.4",
     "workbox-broadcast-update": "^5.1.4",

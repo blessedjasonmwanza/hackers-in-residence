@@ -110,7 +110,7 @@ main{
   text-align: center;
 }
 /* MSC */
-input:not(.swal2-input), input:not(.swal2-select), select:not(.swal2-select){
+input:not(.swal2-input), textarea, input:not(.swal2-select), select:not(.swal2-select){
   border: none;
   box-shadow: 0 0 0 2px rgb(0 0 0 / 15%);
   height: 20px;
@@ -119,6 +119,10 @@ input:not(.swal2-input), input:not(.swal2-select), select:not(.swal2-select){
   border-radius: 5px;
   font-weight: 500;
   transition: .6s;
+}
+textarea{
+  box-shadow: 0 0 0 2px rgb(0 0 0 / 15%);
+  outline: none;
 }
 select:not(.swal2-select){
   height: 40px;

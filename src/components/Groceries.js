@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import Swal from 'sweetalert2';
+import DeliveryDay from './utils/DeliveryDay';
+import PersonalDetailsFields from './utils/PersonalDetailsFields';
+import {useSelector} from 'react-redux';
+
 
 export default function Groceries() {
-    var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-    const date = new Date();
-    const currentHour = date.toLocaleString('en-US', {'hour': 'numeric','hour12': false});
-    const tomorrow = new Date(date.getTime() + 24 * 60 * 60 * 1000);
-    const afterTomorrow = new Date(date.getTime() + 2 * 24 * 60 * 60 * 1000);
-    const returnDay = (currentHour >= 24 || currentHour <= 11) ? days[tomorrow.getDay()] : days[afterTomorrow.getDay()];
+    const userData = useSelector(state => state.orders.userData);
     const [groceries, setGroceries] = useState([
         {
             id: 1,
@@ -53,24 +52,14 @@ export default function Groceries() {
         },
         
     ]);
-    const savedUserData = JSON.parse(localStorage.getItem('userData')) || {
-        first_name: '',
-        last_name: '',
-        email: '',
-        phone: '',
-        address: '',
-    };
+
     const [selectProduct, setSelectProduct] = useState('');
-    const [userData, setUserData] = useState(savedUserData);
-    useEffect(() => {
-        localStorage.setItem('userData', JSON.stringify(userData));
-    }, [userData]);
     const placeOrder = (e) => {
         e.preventDefault();
         const order = {
             user: userData,
             item: selectProduct,
-            date: returnDay,
+            date: DeliveryDay(),
         };
         Swal.fire({
             title: 'Confirm order',
@@ -100,22 +89,7 @@ export default function Groceries() {
     <section className='groceries animate__animated animate__fadeIn'>
         <h1 className='page-title'>Buy Groceries</h1>
         <form onSubmit={(e) => placeOrder(e)}>
-            <label>
-                First name:
-                <input onInput={(e) =>(setUserData({...userData, first_name: e.target.value}))} value={userData.first_name}  type="text" placeholder="First name"  required/>
-            </label>
-            <label>
-                Last name:
-                <input onInput={(e) =>(setUserData({...userData, last_name: e.target.value}))} value={userData.last_name} type="text" placeholder="Last name"  required/>
-            </label>
-            <label>
-                Phone number:
-                <input onInput={(e) =>(setUserData({...userData, phone: e.target.value}))} value={userData.phone} type="tel" placeholder="Phone number"  required/>
-            </label>
-            <label>
-                Prefab No:
-                <input onInput={(e) =>(setUserData({...userData, address: e.target.value}))} value={userData.address} type="text" placeholder="Prefab number"  required/>
-            </label>
+            <PersonalDetailsFields />
             <label>
                 Items to buy:
                 <select required onChange={(e) => setSelectProduct(e.target.value) }>
@@ -129,7 +103,7 @@ export default function Groceries() {
             </label>
             <label style={{flexFlow:'row wrap',justifyContent:'space-around'}}>
                 <span>Delivery date:</span>
-                <b>10:00 AM</b> <b>{returnDay}</b>
+                <b>10:00 AM</b> <b>{DeliveryDay()}</b>
             </label>
             <center>
                 <button type="submit" className='btn'>Place order</button>

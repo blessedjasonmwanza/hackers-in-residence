@@ -109,6 +109,37 @@ main{
   margin: 20 auto;
   text-align: center;
 }
+.contacts-list{
+  display: flex;
+  flex-direction: column;
+}
+.contacts-list .contact-number{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid hsla(0,0%,91%,.7);
+  color: #7c7a7a;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 5px;
+  transition: .6s;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.contacts-list .contact-number:focus, .contacts-list .contact-number:hover{
+  background: hsla(0,0%,75%,.2);
+  color: var(--theme-color);
+  border-radius: 6px;
+}
+/* .contacts-list .contact-number:focus{
+  background: hsla(0,0%,75%,.2);
+  color: var(--theme-color);
+  border-radius: 6px;
+} */
+.contacts-list .contact-number .name{
+  font-weight: 600;
+  opacity: .91;
+}
 /* MSC */
 input:not(.swal2-input), textarea, input:not(.swal2-select), select:not(.swal2-select){
   border: none;

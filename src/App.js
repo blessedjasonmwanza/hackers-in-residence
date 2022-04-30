@@ -5,6 +5,7 @@ import LandingPage from './components/LandingPage';
 import Groceries from './components/Groceries';
 import TopHeader from './components/TopHeader';
 import Beverages from './components/Beverages';
+import EmergencyContacts from './components/EmergencyContacts';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/hackers-in-residence" element={<LandingPage />} />
+            <Route path="/emergency-contacts" element={<EmergencyContacts />} />
             <Route path="/groceries" element={<Groceries />} />
             <Route path='/beverages' element={<Beverages />} />
           </Routes>

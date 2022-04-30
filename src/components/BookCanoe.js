@@ -62,7 +62,7 @@ export default function BookCanoe() {
         </label>
         <label style={{flexFlow:'row wrap',justifyContent:'space-around'}}>
               <span>Fees</span>
-              <b>ZMW 200.00</b> <b>per Person</b>
+              <b>ZMW 200.00</b> <b>Per person</b>
           </label>
         <center>
           <button type="submit" className='btn'>Book now</button>

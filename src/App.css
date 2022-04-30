@@ -213,5 +213,20 @@ label{
   }
   label{
     margin-bottom: 20px;
+    position: relative;
+  }
+  input[type="date"], input[type="time"]{
+    background: #fff !important;
+    display: flex;
+    width: 94%;
+    color: #333;
+  }
+  input[type="date"]::placeholder, input[type="time"]::placeholder{
+    color: #333;
+    reset: all;
+  }
+  input[type="date"]::after, input[type="time"]::after{
+    color: #333;
+    display: block;
   }
 }

@@ -6,6 +6,7 @@ import Groceries from './components/Groceries';
 import TopHeader from './components/TopHeader';
 import Beverages from './components/Beverages';
 import EmergencyContacts from './components/EmergencyContacts';
+import BookCanoe from './components/BookCanoe';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path='/book-canoe' element={<BookCanoe />} />
             <Route path="/hackers-in-residence" element={<LandingPage />} />
             <Route path="/emergency-contacts" element={<EmergencyContacts />} />
             <Route path="/groceries" element={<Groceries />} />

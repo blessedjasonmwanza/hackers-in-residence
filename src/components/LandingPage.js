@@ -16,10 +16,10 @@ export default function LandingPage() {
         <NavLink to='book-canoe' className='home-list'>
           Book Canoe ride
         </NavLink>
-        <NavLink to='pickup' className='home-list'>
+        <NavLink to='request-pickup' className='home-list'>
           Request PickUp
         </NavLink>
-        <NavLink to='pickup' className='home-list'>
+        <NavLink to='feature-request' className='home-list'>
           Feature request
         </NavLink>
       </div>
@@ -38,14 +38,14 @@ export default function LandingPage() {
             <p> Order your favorite beverages from our store</p>
           </div>
         </NavLink>
-        <NavLink to="groceries" className='card'>
+        <NavLink to="schedule-exercise" className='card'>
           <img src={exercise} alt="Exercise" className='card-img animate__animated  animate__shakeX  animate__slow' />
           <div className='card-info'>
             <h2>Exercise</h2>
             <p>Join a morning or evening road run and jogs</p>
           </div>
         </NavLink>
-        <NavLink to="beverages" className='card'>
+        <NavLink to="organize-event" className='card'>
           <img src={party} alt="Beverages" className='card-img animate__animated animate__jello  animate__slower' />
           <div className='card-info'>
             <h2>Parties &amp; Chills</h2>

@@ -4,6 +4,11 @@
 
 > - Its basically a side project automation solution to common problems I observe on a daily basis while living in Nkwashi under the [Microverse program](https://www.microverse.org/?grsf=kvpb2j)
 
+
+Please, see the video explaining some core functionality of the app
+## [Watch Demo Video](https://www.loom.com/share/f38c0ad73f3d404996319e3f18b9fe2b)
+
+
 <center>
     <img src="./mobile (13).png"><br />
     <table>
